@@ -17,9 +17,14 @@
       {"name": "French Montana", "rank": 10, "weeks_on_chart": 33}
     ]
   },
-  "mark": {"type": "bar", "color": "blue"},
+  "mark": {"type": "bar"},
   "encoding": {
-    "x": {"field": "name"},
-    "y": {"field": "weeks_on_chart", "type": "quantitative"}
+    "x": {"field": "name", "sort": {"field": "weeks_on_chart", "order": "descending"}},
+    "y": {"field": "weeks_on_chart", "type": "quantitative"},
+    "color": {
+      "field": "name",
+      "type": "nominal",
+      "scale": {"scheme": "rainbow"}
+    }
   }
 }
