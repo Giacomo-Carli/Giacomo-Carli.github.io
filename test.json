@@ -1,0 +1,25 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {"text": "Top 10 Billboard Artists"},
+  "width": 400,
+  "height": 300,
+  "data": {
+    "values": [
+      {"name": "Taylor Swift", "rank": 1, "weeks_on_chart": 501},
+      {"name": "TWICE", "rank": 2, "weeks_on_chart": 39},
+      {"name": "Morgan Wallen", "rank": 3, "weeks_on_chart": 260},
+      {"name": "SZA", "rank": 4, "weeks_on_chart": 235},
+      {"name": "LE SSERAFIM", "rank": 5, "weeks_on_chart": 7},
+      {"name": "Drake", "rank": 6, "weeks_on_chart": 505},
+      {"name": "Luke Combs", "rank": 7, "weeks_on_chart": 365},
+      {"name": "Beyonce", "rank": 8, "weeks_on_chart": 277},
+      {"name": "Zach Bryan", "rank": 9, "weeks_on_chart": 94},
+      {"name": "French Montana", "rank": 10, "weeks_on_chart": 33}
+    ]
+  },
+  "mark": {"type": "bar", "color": "blue"},
+  "encoding": {
+    "x": {"field": "name"},
+    "y": {"field": "weeks_on_chart", "type": "quantitative"}
+  }
+}
